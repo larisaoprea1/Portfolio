@@ -142,32 +142,33 @@ section{
     flex-direction: column;
     margin: 0 auto;
     padding: 50px;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     
 }
 
 .home .image{
-    border: var(--border-bold);
-    border-radius: 60%;
+    border: 4px solid var(--purple);
+   border-radius: 50%;
     margin-bottom: 20px;
     
 }
 
 .image img{
-    border-radius: 60%;
-    width: 100%;
-    height: 15rem;
+    border-radius: 50%;
+    height: 270px;
+    width: 270px;
+
     
 }
 .home .description{
     margin: 10px;
-    
-  /* ↓ Wrap when the elements are of equal width */
-    /* min-inline-size: 50%; */
+
 }
+
 .home .description h2{
     font-size: 2.3rem;
     margin-bottom: 10px;
+    font-weight: bolder;
     
 }
 .home .description span{
@@ -181,21 +182,155 @@ section{
     
 }
 
+.skills{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; 
+}
 
+.skills h1{
+    border-bottom: var(--border-thin);
+    font-weight: bolder;
+    font-size: 3rem;
+}
+.skills h1:hover{
+    color: var(--purple);
+    border-bottom: 1px solid var(--purple);
+}
+.skills .progress{
+    display: flex;
+    flex-direction: column;
+    width:40%;
+}
 
+.progressbar{
+    border-radius: 1rem;
+    border: 1px solid var(--purple);
+}
+.roundstyle{
+    color: white;
+    background-color: var(--purple);
+    border-radius: 1rem;
+    padding: 1px;
+}
+.progress .jstxt{
+    color: white;
+}
+.projects .allprojects{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   row-gap: 2rem;
+   margin: 3rem;
+  
+}
+.projects h1{
+    display: block;
+    border-bottom: var(--border-thin);
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bolder;
+    font-size: 3rem;  
+}
+.projects h1:hover{
+    color: var(--purple);
+    border-bottom: 1px solid var(--purple);
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.projects h4{
+    font-weight: bolder;
+}
+.allprojects p{
+    color: var(--purple);
+    margin-bottom: 5px;
+}
+.allprojects img{
+    height: 15rem;
+    width: 25rem;
+    
+}
+.allprojects a:hover{
+    color: var(--purple);
+}
+.allprojects a{
+    margin-top: 10px;
+    font-size: 150%;
+}
+.contact h1{
+    display: block;
+    border-bottom: var(--border-thin);
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bolder;
+    font-size: 3rem; 
+}
+.contact h1:hover{
+    color: var(--purple);
+    border-bottom: 1px solid var(--purple);
+}
+@media (max-width:1200px){
+    .projects .allprojects{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        row-gap: 2rem;
+        margin: 1rem;
+     }
+     .project{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+     .allprojects img{
+        height: 10rem;
+        width: 20rem;
+    }
+}
 @media (max-width:991px){
   
     body{
+        /* font-size: 120%; */
         padding: 0;
     }
     body.active{
         padding-left: 0;
     }
+   .jstxt{
+       
+       text-align: center;
+       color: white;
+   }
+
 
 }
 
+@media (max-width:635px){
+    .projects .allprojects{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        row-gap: 2rem;
+        
+     }
+     .project{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
 
-
+     }
+     .allprojects img{
+        height: 10rem;
+        width: 20rem;
+    }
+}
 @media (max-width:450px){
     html{
         font-size: 70%;
