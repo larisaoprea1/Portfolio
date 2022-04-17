@@ -224,7 +224,7 @@ section{
    margin: 3rem;
   
 }
-.projects h1{
+/* .projects h1{
     display: block;
     border-bottom: var(--border-thin);
     width: 10%;
@@ -232,7 +232,7 @@ section{
     margin-right: auto;
     font-weight: bolder;
     font-size: 3rem;  
-}
+} */
 .projects h1:hover{
     color: var(--purple);
     border-bottom: 1px solid var(--purple);
@@ -262,7 +262,7 @@ section{
     margin-top: 10px;
     font-size: 150%;
 }
-.contact h1{
+/* .contact h1{
     display: block;
     border-bottom: var(--border-thin);
     width: 10%;
@@ -270,11 +270,54 @@ section{
     margin-right: auto;
     font-weight: bolder;
     font-size: 3rem; 
-}
+} */
 .contact h1:hover{
     color: var(--purple);
     border-bottom: 1px solid var(--purple);
 }
+.contactinfo{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ align-items: center;
+ gap: 1rem;
+ margin: 1rem;
+ 
+}
+.contactme{
+    margin: 1rem;
+    text-align: center;
+    background-color: #f1f1f1;
+    border: var(--border-thin);
+    width: 235px;
+    height: 75px;
+}
+/* .find h1{
+     text-align: center;
+     font-size: 120%;
+     font-weight: bolder;
+     
+}
+.find h1:hover{
+    color: var(--purple);
+
+} */
+.find .links{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 3rem;
+    align-items: center;
+    margin: 2rem;
+}
+.find .links a{
+    font-size: 200%;
+}
+.find .links a:hover{
+ color: var(--purple);
+
+}
+
 @media (max-width:1200px){
     .projects .allprojects{
         display: grid;
@@ -330,6 +373,11 @@ section{
         height: 10rem;
         width: 20rem;
     }
+    .contactinfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       }
 }
 @media (max-width:450px){
     html{
