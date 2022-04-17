@@ -220,7 +220,7 @@ section{
 .projects .allprojects{
    display: grid;
    grid-template-columns: repeat(3, 1fr);
-   row-gap: 2rem;
+   gap: 3rem;
    margin: 3rem;
   
 }

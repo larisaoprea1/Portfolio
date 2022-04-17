@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -42,10 +43,10 @@
 
     <!-- home -->
 
-    <section class="home" id="home">
+    <section class="home" id="home" >
 
         <div class="image">
-            <img src="img/fifi3.jpg" alt="">
+            <img src="img/fifi3.jpg" alt="" >
         </div>
 
         <div class="description">
@@ -58,23 +59,23 @@
 
     <div class="skills" id="skills">
 
-        <h1>Skills</h1>
+        <h1 data-aos="fade-up-down"> Skills</h1>
 
         <div class="progress">
 
-            <div class="w3-section w3-light-grey progressbar">
+            <div class="w3-section w3-light-grey progressbar" data-aos="fade-right">
                 <div class="w3-container w3-padding w3-center roundstyle" style="width:70%">HTML</div>
               </div>
-              <div class="w3-section w3-light-grey progressbar">
+              <div class="w3-section w3-light-grey progressbar" data-aos="fade-left">
                 <div class="w3-container w3-padding  w3-center roundstyle" style="width:55%">CSS</div>
               </div>
-              <div class="w3-section w3-light-grey progressbar">
+              <div class="w3-section w3-light-grey progressbar" data-aos="fade-right">
                 <div class="w3-container w3-padding w3-center roundstyle " style="width:25%"> <span class="jstxt">JavaScript</span> </div>
               </div>
-              <div class="w3-section w3-light-grey progressbar">
-                <div class="w3-container w3-padding w3-center roundstyle" style="width:40%">.NET MVC</div>
+              <div class="w3-section w3-light-grey progressbar" data-aos="fade-left">
+                <div class="w3-container w3-padding w3-center roundstyle" style="width:40%" >.NET MVC</div>
               </div>
-              <div class="w3-section w3-light-grey progressbar">
+              <div class="w3-section w3-light-grey progressbar" data-aos="fade-right">
                 <div class="w3-container w3-padding w3-center roundstyle" style="width:35%">SQL</div>
               </div>
 
@@ -90,7 +91,7 @@
         
         <div class="allprojects">
 
-            <div class="project">
+            <div class="project"  data-aos="fade-right">
                 <img src="img/AquaticAdventure.png" alt="">
                 <h4>Aquatic adventure</h4>
                 <p>2D Game using Framework with Win32 GDI</p>
@@ -98,7 +99,7 @@
                 
             </div>
 
-            <div class="project">
+            <div class="project"  data-aos="fade-down">
                 <img src="img/CatLibraryProject.png" alt="">
                 <h4>CatLibrary</h4>
                 <p>Website responsive using HTML, CSS and JavaScript</p>
@@ -108,21 +109,21 @@
                 
             </div>
             
-            <div class="project">
+            <div class="project" data-aos="fade-left" >
                 <img src="img/FamilyBase.png" alt="">
                 <h4>FamilyBase</h4>
                 <p>Java application using Java Swing and MySql</p>
                 <a href="https://github.com/larisaoprea1/FamilyBase" class="fab fa-github"></a>
                 
             </div>
-            <div class="project">
+            <div class="project" data-aos="fade-right">
                 <img src="img/Movies.png" alt="">
                 <h4>Movies</h4>
                 <p>Java application using Java Swing and MySql</p>
                 <a href="https://github.com/larisaoprea1/Movies" class="fab fa-github"></a>
                 
             </div>
-            <div class="project">
+            <div class="project"  data-aos="fade-up">
                 <img src="img/MyFirstWebSite.png" alt="">
                 <h4>MyFirstWebSite</h4>
                 <p>My first website using HTML and CSS</p>
@@ -130,7 +131,7 @@
                 <a href="https://github.com/larisaoprea1/FrontendSite" class="fab fa-github"></a>
                 
             </div>
-            <div class="project">
+            <div class="project"  data-aos="fade-left">
                 <img src="img/rockscissorspaper.png" alt="">
                 <h4>Rock Scissors Paper</h4>
                 <p>Little game using JavaScript</p>
@@ -184,5 +185,12 @@
 
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          duration: 800,
+          delay: 100
+      });
+    </script>
 </body>
 </html>
